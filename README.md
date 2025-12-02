@@ -73,17 +73,7 @@
   - Recomendamos incluir cláusula contratual que transfira propriedade intelectual e garanta a cessão de direitos de uso do material para o Município de Santa Helena.
   - Para detalhes contratuais, consulte o setor jurídico do Município — o conteúdo aqui é uma sugestão técnica e não substitui orientação jurídica.
 
-  ## Contato e responsáveis
 
-  - Proponente: [Nome da empresa ou equipe]
-  - Contato: [email@exemplo.com | telefone]
-  - Ponto de contato para dúvidas técnicas e acesso a materiais adicionais (Figma, ativos, licenças)
-
-  ## Como contribuir
-
-  1. Abra uma issue para discutir mudanças ou correções.
-  2. Crie um branch com um PR descrevendo a alteração (ex.: `feat/proposta-desktop`) e faça review.
-  3. Após aprovação, o PR será integrado.
 
   ## Observações finais
 
