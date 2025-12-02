@@ -21,6 +21,15 @@ export function CatalogPage({ onAddToQuote }: CatalogPageProps) {
   const [showFilters, setShowFilters] = useState(false);
   const [selectedPart, setSelectedPart] = useState<Part | null>(null);
 
+  // Color classes per category for better contrast and visual distinction
+  const categoryColorMap: Record<string, string> = {
+    'mecânica': 'bg-blue-50 text-blue-600 dark:bg-blue-900 dark:text-blue-200',
+    'elétrica': 'bg-amber-50 text-amber-700 dark:bg-amber-900 dark:text-amber-200',
+    'freios': 'bg-red-50 text-red-700 dark:bg-red-900 dark:text-red-200',
+    'suspensão': 'bg-violet-50 text-violet-700 dark:bg-violet-900 dark:text-violet-200',
+    'pneus': 'bg-neutral-50 text-neutral-700 dark:bg-neutral-900 dark:text-neutral-200',
+  };
+
   const filteredParts = mockParts.filter(part => {
     const matchesSearch = part.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          part.code.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -141,7 +150,12 @@ export function CatalogPage({ onAddToQuote }: CatalogPageProps) {
                         </div>
                       </td>
                       <td className="py-3 px-4">
-                        <Badge variant="category">{part.category}</Badge>
+                        <Badge
+                          variant="category"
+                          className={categoryColorMap[part.category.toLowerCase()] ?? ''}
+                        >
+                          {part.category}
+                        </Badge>
                       </td>
                       <td className="py-3 px-4 text-right">
                         <div>
