@@ -141,7 +141,7 @@ export function CatalogPage({ onAddToQuote }: CatalogPageProps) {
                         </div>
                       </td>
                       <td className="py-3 px-4">
-                        <Badge variant="secondary">{part.category}</Badge>
+                        <Badge variant="category">{part.category}</Badge>
                       </td>
                       <td className="py-3 px-4 text-right">
                         <div>
