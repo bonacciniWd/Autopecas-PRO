@@ -55,6 +55,22 @@
   # Abra http://localhost:5173 no seu navegador (Vite padrão)
   ```
 
+  ## Deploy para Vercel (opcional)
+
+  O projeto está preparado para deploy estático no Vercel. Para garantir deploy automático:
+
+  - O `vite.config.ts` foi ajustado para gerar saída em `dist`.
+  - Um arquivo `vercel.json` foi adicionado para configurar a saída do build em `dist`.
+
+  Recomendações (caso faça manualmente no painel do Vercel):
+
+  1. No painel Vercel, escolha o repositório `bonacciniWd/Autopecas-PRO`.
+  2. Build Command: `npm run build`.
+  3. Output Directory: `dist`.
+  4. Deploy.
+
+  Observação: Se preferir manter `build` como saída, ajuste a opção "Output Directory" no painel do projeto na Vercel para `build` (ao invés de `dist`).
+
   ## Como revisar/avaliar
 
   - Use o protótipo no Figma para validar o fluxo
