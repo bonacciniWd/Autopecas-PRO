@@ -121,7 +121,7 @@ export function QuotesPage() {
 
       {/* New Quote Dialog */}
       <Dialog open={showNewQuote} onOpenChange={setShowNewQuote}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="w-full max-w-[95vw] md:max-w-6xl lg:max-w-7xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>Novo Orçamento</DialogTitle>
           </DialogHeader>
@@ -131,7 +131,7 @@ export function QuotesPage() {
 
       {/* View Quote Dialog */}
       <Dialog open={!!selectedQuote} onOpenChange={() => setSelectedQuote(null)}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="w-full max-w-[95vw] md:max-w-6xl lg:max-w-7xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>Orçamento {selectedQuote?.number}</DialogTitle>
           </DialogHeader>
